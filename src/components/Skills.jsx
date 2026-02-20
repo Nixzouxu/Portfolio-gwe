@@ -7,9 +7,10 @@ import {
   SiMongodb, SiFlutter, SiDart, SiFirebase, SiLaravel,
   SiFigma, SiGit, SiGithub, SiPostman, SiIntellijidea,
   SiNeovim,
+  SiCinema4D, SiBlender, SiAdobeaftereffects, SiAdobeaudition,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
-import { VscVscode } from "react-icons/vsc";
+import { VscVscode } from 'react-icons/vsc';
 
 const Skills = () => {
   const ref = useRef(null);
@@ -49,7 +50,12 @@ const Skills = () => {
     { name: 'IntelliJ', icon: SiIntellijidea, color: '#FF318C' },
     { name: 'VS Code', icon: VscVscode, color: '#007ACC' },
     { name: 'Neovim', icon: SiNeovim, color: '#57A143' },
+    { name: 'Cinema 4D', icon: SiCinema4D, color: '#011A6A' },
+    { name: 'Blender', icon: SiBlender, color: '#F5792A' },
+    { name: 'After Effects', icon: SiAdobeaftereffects, color: '#9999FF' },
+    { name: 'Audition', icon: SiAdobeaudition, color: '#9999FF' },
   ];
+
 
   const softSkills = [
     'Cross-Functional Communication',

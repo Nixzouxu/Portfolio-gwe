@@ -6,9 +6,9 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   const biodata = [
-    { label: 'Full Name', value: 'MH' },
+    { label: 'Full Name', value: 'Muhammad Hafidz' },
     { label: 'Nickname', value: 'Nxozu' },
-    { label: 'Date of Birth', value: 'Jakarta, 15 Mei 2004' },
+    { label: 'Date of Birth', value: 'Sesuai KTP' },
     { label: 'Hobby', value: 'Making 3D Things' },
     { label: 'Goal', value: 'AI/ML Engineer & SOC Analyst' },
     { label: 'Status', value: 'CS Student' },
@@ -63,9 +63,10 @@ const About = () => {
               <span className="text-[#00FFE7]">Cybersecurity</span>.
             </p>
             <p className="text-[rgba(226,235,240,0.5)] leading-relaxed">
-              When I'm not coding, you'll find me creating 3D models — where art meets technology.
+              When I'm not coding, you'll find me creating 3D models where art meets technology.
               I believe the best digital products come from combining strong technical skills
-              with thoughtful design and user empathy.
+              with thoughtful design and user empathy and Also i like to teach some people
+              about the things that i learn from internet.
             </p>
             <p className="text-[rgba(226,235,240,0.5)] leading-relaxed">
               My journey is just getting started, and I'm excited to grow into a professional

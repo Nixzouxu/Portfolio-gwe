@@ -3,7 +3,7 @@ import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
 import { SiFigma } from 'react-icons/si';
 import { HiChevronRight } from 'react-icons/hi';
-import { BsCodeSlash, BsBrain, BsPalette } from 'react-icons/bs';
+import { BsCodeSlash, BsCpu, BsPaletteFill } from 'react-icons/bs';
 
 const Projects = () => {
   const ref = useRef(null);
@@ -19,8 +19,8 @@ const Projects = () => {
 
   const categoryIcons = {
     software: BsCodeSlash,
-    aiml: BsBrain,
-    uiux: BsPalette,
+    aiml: BsCpu,
+    uiux: BsPaletteFill,
   };
 
   const projects = [
@@ -56,7 +56,7 @@ const Projects = () => {
       categoryLabel: 'UI / UX Design',
       title: 'SISA+',
       subtitle: 'Inclusive Digital Platform',
-      description: 'End-to-end UX design for a digital platform transforming household waste into micro-income. Applied Think-Aloud Protocol and 5-Second Tests to validate the Eco-Prosperity design system — achieving 80%+ navigation success.',
+      description: 'End-to-end UX design for a digital platform transforming household waste into micro-income. Applied Think-Aloud Protocol and 5-Second Tests to validate the Eco-Prosperity design system achieving 80%+ navigation success.',
       tags: ['Figma', 'UX Research', 'Prototyping', 'Design System'],
       figma: 'https://www.figma.com/design/dCHybADwWU59o1mf0pli3S/SISA-?node-id=0-1&t=rIE57LvYa0FUoHPD-1',
       accent: '#00B4A0',
@@ -152,14 +152,18 @@ const Projects = () => {
 const FlipCard = ({ project, i, isInView, categoryIcon: CategoryIcon }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
+  const handleCardHover = (entering) => {
+    setIsFlipped(entering);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: 0.2 + i * 0.1 }}
-      onMouseEnter={() => setIsFlipped(true)}
-      onMouseLeave={() => setIsFlipped(false)}
-      className="w-full sm:w-[340px] md:w-[360px] h-[520px] perspective-1000"
+      onMouseEnter={() => handleCardHover(true)}
+      onMouseLeave={() => handleCardHover(false)}
+      className="w-full sm:w-[340px] md:w-[360px] h-[520px]"
       style={{ perspective: '1000px' }}
     >
       <motion.div
@@ -267,21 +271,18 @@ const FlipCard = ({ project, i, isInView, categoryIcon: CategoryIcon }) => {
                 ))}
               </div>
 
-              {/* Links - FIXED: Direct redirect */}
-              <div className="flex gap-3 pt-4 border-t border-[rgba(0,255,231,0.08)] mt-auto">
+              {/* Links */}
+              <div className="flex gap-3 pt-4 border-t border-[rgba(0,255,231,0.08)] mt-auto" style={{ pointerEvents: 'auto' }}>
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.open(project.github, '_blank', 'noopener,noreferrer');
-                    }}
                     className="btn-secondary text-xs py-2 px-4 hover:scale-105 transition-transform"
+                    style={{ pointerEvents: 'auto' }}
                   >
                     <FaGithub size={12} />
-                    GitHub
+                    <span>GitHub</span>
                   </a>
                 )}
                 {project.figma && (
@@ -289,14 +290,11 @@ const FlipCard = ({ project, i, isInView, categoryIcon: CategoryIcon }) => {
                     href={project.figma}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.open(project.figma, '_blank', 'noopener,noreferrer');
-                    }}
                     className="btn-secondary text-xs py-2 px-4 hover:scale-105 transition-transform"
+                    style={{ pointerEvents: 'auto' }}
                   >
                     <SiFigma size={12} />
-                    Figma
+                    <span>Figma</span>
                   </a>
                 )}
               </div>

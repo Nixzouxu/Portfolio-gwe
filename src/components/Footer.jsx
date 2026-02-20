@@ -39,7 +39,7 @@ const Footer = () => {
         {/* Bottom line with glow */}
         <div className="mt-8 h-px bg-gradient-to-r from-transparent via-[rgba(0,255,231,0.3)] to-transparent" />
         <p className="text-center font-mono text-[9px] text-[rgba(226,235,240,0.15)] tracking-widest mt-4 uppercase">
-          Designed & Developed by Nxozu — 2024
+          Designed & Developed by Nxozu — 2026
         </p>
       </div>
     </footer>
