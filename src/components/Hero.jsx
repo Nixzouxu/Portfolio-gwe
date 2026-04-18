@@ -70,7 +70,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="text-[rgba(226,235,240,0.5)] max-w-2xl mx-auto mb-12 text-base leading-relaxed"
+            className="text-[rgba(6,9,10,0.01)] max-w-2xl mx-auto mb-12 text-base leading-relaxed"
           >
             Enthusiastic Computer Science student specializing in Software Development. Currently building mobile &amp; web applications while expanding knowledge in AI/ML and Cybersecurity to pursue my career vision.
           </motion.p>
@@ -105,7 +105,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -4, color: '#00FFE7' }}
-                className="text-[rgba(226,235,240,0.3)] transition-all duration-200 hover:drop-shadow-[0_0_8px_rgba(0,255,231,0.8)]"
+                className="text-[rgba(226,235,240,0.24)] transition-all duration-200 hover:drop-shadow-[0_0_8px_rgba(0,255,231,0.8)]"
                 title={label}
               >
                 <Icon size={20} />
