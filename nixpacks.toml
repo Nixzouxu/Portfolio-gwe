@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ['...', 'php81', 'php81Packages.composer', 'php81Extensions.pdo', 'php81Extensions.pdo_pgsql', 'php81Extensions.pgsql']
+nixPkgs = ['php8', 'php8Packages.composer']
 
 [phases.install]
 cmds = ['echo "PHP 8.1 with PostgreSQL extension installed"']
 
 [start]
-cmd = 'php -S 0.0.0.0:$PORT -t .'
+cmd = 'php -S 0.0.0.0:$PORT -t api'
