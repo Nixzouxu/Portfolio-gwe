@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { HiUser, HiMail, HiChat, HiClock } from 'react-icons/hi';
 
 // CHANGE THIS to your Railway API URL after deployment
-const API_URL = 'https://your-api.railway.app';
+const API_URL = 'https://php-api-production-c4fb.up.railway.app';
 
 const Comments = () => {
   const [comments, setComments] = useState([]);
