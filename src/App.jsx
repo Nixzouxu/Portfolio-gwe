@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle' 
 import './index.css'
 import Comments from './components/Comments'
+import Calculator from './components/Calculator'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Calculator />
       <Contact />
       <Comments />
       <Footer />
