@@ -70,9 +70,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="text-[rgba(6,9,10,0.01)] max-w-2xl mx-auto mb-12 text-base leading-relaxed"
+            className="text-[rgba(226,235,240,0.65)] max-w-2xl mx-auto mb-12 text-base leading-relaxed"
           >
-            Enthusiastic Computer Science student specializing in Software Development. Currently building mobile &amp; web applications while expanding knowledge in AI/ML and Cybersecurity to pursue my career vision.
+            Enthusiastic Computer Science student specializing in Software Development. Currently building mobile & web applications while expanding knowledge in AI/ML and Cybersecurity to pursue my career vision.
           </motion.p>
 
           {/* CTA Buttons */}

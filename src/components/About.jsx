@@ -49,7 +49,6 @@ const About = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left — Bio text */}
           <motion.div
             variants={fadeUp(0.15)}
             initial="hidden"
@@ -62,13 +61,13 @@ const About = () => {
               intersection of <span className="text-[#00FFE7]">AI/ML</span> and{' '}
               <span className="text-[#00FFE7]">Cybersecurity</span>.
             </p>
-            <p className="text-[rgba(0,0,0,0.06)] leading-relaxed">
+            <p className="text-[rgba(226,235,240,0.65)] leading-relaxed">
               When I'm not coding, you'll find me creating 3D models where art meets technology.
               I believe the best digital products come from combining strong technical skills
               with thoughtful design and user empathy and Also i like to teach some people
               about the things that i learn from internet.
             </p>
-            <p className="text-[rgba(0,0,0,0)] leading-relaxed">
+            <p className="text-[rgba(226,235,240,0.65)] leading-relaxed">
               My journey is just getting started, and I'm excited to grow into a professional
               who can bridge the gap between intelligent systems and secure infrastructure.
             </p>
